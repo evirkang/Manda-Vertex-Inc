@@ -126,7 +126,7 @@ type ButtonBase = {
 type ButtonAsButton = ButtonBase &
   Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className" | "children"> & {
     href?: never;
-  };
+};
 
 type ButtonAsLink = ButtonBase & {
   href: string;
@@ -150,8 +150,8 @@ export function Button(props: ButtonProps) {
     className,
   );
 
-  // Link version
-  if (props.href) {
+  // Link button
+  if ("href" in props) {
     if (props.external) {
       return (
         <a
@@ -172,17 +172,19 @@ export function Button(props: ButtonProps) {
     );
   }
 
-  // Button version
+  // Normal button
+  const buttonProps = props as ButtonAsButton;
+
   const {
     type = "button",
     disabled,
     onClick,
-    ...buttonProps
-  } = props;
+    ...rest
+  } = buttonProps;
 
   return (
     <button
-      {...buttonProps}
+      {...rest}
       type={type}
       className={classes}
       disabled={disabled}
@@ -192,3 +194,4 @@ export function Button(props: ButtonProps) {
     </button>
   );
 }
+
