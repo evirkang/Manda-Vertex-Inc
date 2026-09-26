@@ -90,7 +90,6 @@
 // }
 
 
-```tsx
 "use client";
 
 import Link from "next/link";
@@ -188,4 +187,3 @@ export function Button(props: ButtonProps) {
     </button>
   );
 }
-```
