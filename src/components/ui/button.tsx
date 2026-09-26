@@ -90,6 +90,7 @@
 // }
 
 
+
 "use client";
 
 import Link from "next/link";
@@ -102,8 +103,10 @@ type ButtonSize = "md" | "lg";
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
     "border border-primary/40 bg-[linear-gradient(135deg,#8af0dc,#5dd7c1)] text-primary-foreground shadow-[0_10px_30px_rgba(65,210,182,0.2)] hover:-translate-y-0.5 hover:brightness-105 hover:shadow-[0_15px_34px_rgba(65,210,182,0.25)] active:brightness-95",
+
   secondary:
     "border border-white/15 bg-white/[0.035] text-foreground shadow-[inset_0_1px_rgba(255,255,255,0.05)] hover:-translate-y-0.5 hover:border-primary/35 hover:bg-white/[0.075] hover:text-foreground active:bg-muted",
+
   ghost:
     "border border-transparent bg-transparent text-foreground hover:-translate-y-0.5 hover:text-primary",
 };
@@ -122,7 +125,7 @@ type ButtonBase = {
 
 type ButtonAsButton = ButtonBase &
   Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className" | "children"> & {
-    href?: undefined;
+    href?: never;
   };
 
 type ButtonAsLink = ButtonBase & {
@@ -147,7 +150,8 @@ export function Button(props: ButtonProps) {
     className,
   );
 
-  if ("href" in props && props.href) {
+  // Link version
+  if (props.href) {
     if (props.external) {
       return (
         <a
@@ -168,6 +172,7 @@ export function Button(props: ButtonProps) {
     );
   }
 
+  // Button version
   const {
     type = "button",
     disabled,
