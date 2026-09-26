@@ -189,9 +189,9 @@
 //     </button>
 //   );
 // }
+
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -216,19 +216,20 @@ type ButtonBase = {
   variant?: ButtonVariant;
   size?: ButtonSize;
   className?: string;
-  children?: React.ReactNode;
+  children: React.ReactNode;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
+  onClick?: () => void;
 };
 
-type ButtonAsButton = ButtonBase &
-  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof ButtonBase> & {
-    href?: undefined;
-  };
+type ButtonAsButton = ButtonBase & {
+  href?: undefined;
+};
 
-type ButtonAsLink = ButtonBase &
-  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof ButtonBase> & {
-    href: string;
-    external?: boolean;
-  };
+type ButtonAsLink = ButtonBase & {
+  href: string;
+  external?: boolean;
+};
 
 export type ButtonProps = ButtonAsButton | ButtonAsLink;
 
@@ -244,18 +245,14 @@ export function Button(props: ButtonProps) {
     "inline-flex items-center justify-center gap-2 rounded-xl font-semibold tracking-[-0.01em] transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50",
     variantClasses[variant],
     sizeClasses[size],
-    className
+    className,
   );
 
-  // Link rendering branch
-  if (props.href !== undefined) {
-    const { href, external, variant: _v, size: _s, className: _c, children: _ch, ...rest } = props;
-
-    if (external) {
+  if ("href" in props && props.href) {
+    if (props.external) {
       return (
         <a
-          {...rest}
-          href={href}
+          href={props.href}
           className={classes}
           target="_blank"
           rel="noopener noreferrer"
@@ -264,24 +261,20 @@ export function Button(props: ButtonProps) {
         </a>
       );
     }
-
     return (
-      <Link {...rest} href={href} className={classes}>
+      <Link href={props.href} className={classes}>
         {children}
       </Link>
     );
   }
 
-  // Button rendering branch
-  const { type = "button", disabled, onClick, variant: _v, size: _s, className: _c, children: _ch, ...rest } = props;
-
+  const { type = "button", disabled, onClick } = props;
   return (
     <button
       type={type}
+      className={classes}
       disabled={disabled}
       onClick={onClick}
-      {...rest}
-      className={classes}
     >
       {children}
     </button>
