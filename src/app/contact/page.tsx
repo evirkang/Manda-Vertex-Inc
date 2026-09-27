@@ -58,7 +58,7 @@ export default function ContactPage() {
                     href={`mailto:${company.email}`}
                     className="text-primary hover:text-accent"
                   >
-                    {company.email}
+                    info@amandavertexinc.com
                   </a>
                 </li>
               ) : null}
