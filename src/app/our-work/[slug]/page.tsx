@@ -22,13 +22,13 @@ export async function generateMetadata({ params }: PageProps) {
   const project = getPublishedProjectBySlug(slug);
   if (!project) {
     return createPageMetadata({
-      title: "Case Study | Manda Vertex Inc.",
-      description: "Anonymized case-study template from Manda Vertex Inc.",
+      title: "Case Study | Amanda Vertex Inc.",
+      description: "Anonymized case-study template from Amanda Vertex Inc.",
       path: `/our-work/${slug}`,
     });
   }
   return createPageMetadata({
-    title: `${project.title} | Our Work | Manda Vertex Inc.`,
+    title: `${project.title} | Our Work | Amanda Vertex Inc.`,
     description:
       project.challenge?.slice(0, 155) ??
       "An anonymized case-study template awaiting verified project facts and client approval.",
