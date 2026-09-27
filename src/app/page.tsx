@@ -18,9 +18,9 @@ import { solutions } from "@/data/solutions";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Manda Vertex Inc. | AI Chatbots & Custom Software | Calgary",
+  title: "Amanda Vertex Inc. | AI Chatbots & Custom Software | Calgary",
   description:
-    "Calgary-based Manda Vertex Inc. develops AI chatbots, software integrations, workflow automation, custom CRM systems and mobile applications.",
+    "Calgary-based Amanda Vertex Inc. develops AI chatbots, software integrations, workflow automation, custom CRM systems and mobile applications.",
   path: "/",
 });
 
@@ -46,7 +46,7 @@ export default function HomePage() {
               className="max-w-xl"
             />
             <p className="mt-6 text-muted-foreground">
-              Manda Vertex Inc. designs and develops practical digital solutions
+              Amanda Vertex Inc. designs and develops practical digital solutions
               tailored to operational needs, with a focus on thoughtful
               integration, usability and long-term scalability.
             </p>
@@ -175,7 +175,7 @@ export default function HomePage() {
               Led With Practical Technology in Mind
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Manda Vertex Inc. approaches technology engagements by
+              Amanda Vertex Inc. approaches technology engagements by
               understanding the client&apos;s workflow, defining practical project
               requirements and developing solutions appropriate to the client&apos;s
               systems and goals.
