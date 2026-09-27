@@ -97,7 +97,7 @@ export function SiteFooter() {
               {company.email ? (
                 <li>
                   <a href={`mailto:${company.email}`} className="hover:text-primary">
-                    /* {company.email} */ info@amandavertexinc.com
+                    info@amandavertexinc.com
                   </a>
                 </li>
               ) : null}
