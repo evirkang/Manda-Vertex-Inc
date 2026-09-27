@@ -9,9 +9,9 @@ import { services } from "@/data/services";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "AI, Software Integration & Custom Development Services | Manda Vertex",
+  title: "AI, Software Integration & Custom Development Services | Amanda Vertex",
   description:
-    "Services from Manda Vertex Inc.: AI chatbots, software integration, custom CRM, mobile and web applications, and ongoing support.",
+    "Services from Amanda Vertex Inc.: AI chatbots, software integration, custom CRM, mobile and web applications, and ongoing support.",
   path: "/services",
 });
 
@@ -21,7 +21,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="CAPABILITIES / 01—05"
         title="Technology Services Built Around Your Business"
-        description="From conversational AI to custom software, Manda Vertex Inc. develops digital solutions around operational needs, existing systems and project goals."
+        description="From conversational AI to custom software, Amanda Vertex Inc. develops digital solutions around operational needs, existing systems and project goals."
         imageSrc="https://images.pexels.com/photos/6804612/pexels-photo-6804612.jpeg?auto=compress&cs=tinysrgb&w=1600"
         imageAlt="Computer workstations in a software development workspace"
         visualVariant="services"
