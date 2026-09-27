@@ -24,7 +24,7 @@ export function HomeHero() {
               Intelligent AI and Custom Software Built Around Your Business
             </h1>
             <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
-              Manda Vertex Inc. is a Calgary-based technology company developing
+              Amanda Vertex Inc. is a Calgary-based technology company developing
               advanced AI chatbot solutions, business process automation, custom
               CRM platforms and mobile applications. We help organizations connect
               their tools, streamline operations and create better digital
@@ -71,7 +71,7 @@ export function HomeHero() {
             <div className="absolute inset-4 z-10 rounded-[1.05rem] border border-white/15 sm:inset-5" aria-hidden="true" />
             <div className="absolute left-7 top-7 z-10 flex items-center gap-2 rounded-full border border-white/20 bg-[#07131c]/60 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.17em] text-white/90 shadow-lg backdrop-blur-md sm:left-9 sm:top-9">
               <span className="size-1.5 rounded-full bg-primary shadow-[0_0_12px_rgba(115,232,211,0.9)]" />
-              Manda Vertex · Technology
+              Amanda Vertex · Technology
             </div>
             <div className="absolute bottom-7 left-7 z-10 max-w-[16rem] rounded-2xl border border-white/15 bg-[#07131c]/72 px-4 py-3 shadow-[0_14px_40px_rgba(0,0,0,0.28)] backdrop-blur-xl sm:bottom-9 sm:left-9">
               <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-primary">AI · software · automation</p>
