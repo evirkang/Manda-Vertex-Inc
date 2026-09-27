@@ -41,7 +41,7 @@ export function SiteFooter() {
                 AV
               </span>
               <span className="text-base font-semibold text-foreground">
-                /* {company.displayName} */ Amanda Vertex Inc
+                 {company.displayName} 
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-6 text-muted-foreground">
