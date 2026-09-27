@@ -10,9 +10,9 @@ import { deliveryApproachSteps, principles } from "@/data/site";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "About Manda Vertex Inc. | Calgary Technology Company",
+  title: "About Amanda Vertex Inc. | Calgary Technology Company",
   description:
-    "Learn about Manda Vertex Inc., a Calgary technology company focused on AI chatbots, integrations, CRM development and digital products.",
+    "Learn about Amanda Vertex Inc., a Calgary technology company focused on AI chatbots, integrations, CRM development and digital products.",
   path: "/about",
 });
 
@@ -26,13 +26,13 @@ const focusAreas = [
 
 export default function AboutPage() {
   const aboutLead = company.showFederallyIncorporated
-    ? "Manda Vertex Inc. is a Calgary-based, federally incorporated technology startup focused on advanced AI-powered solutions and custom software development."
-    : "Manda Vertex Inc. is a Calgary-based technology company focused on advanced AI-powered solutions and custom software development.";
+    ? "Amanda Vertex Inc. is a Calgary-based, federally incorporated technology startup focused on advanced AI-powered solutions and custom software development."
+    : "Amanda Vertex Inc. is a Calgary-based technology company focused on advanced AI-powered solutions and custom software development.";
 
   return (
     <>
       <PageHero
-        eyebrow="ABOUT MANDA VERTEX"
+        eyebrow="ABOUT AmANDA VERTEX"
         title="Technology Built Around Practical Business Needs"
         description={aboutLead}
         imageSrc="https://images.pexels.com/photos/15099677/pexels-photo-15099677.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -59,7 +59,7 @@ export default function AboutPage() {
           <SectionHeading title="Building Technology Around the Way Businesses Actually Work" />
           <div className="mt-6 max-w-3xl space-y-4 text-muted-foreground">
             <p>
-              Manda Vertex Inc. brings together conversational AI, business
+              Amanda Vertex Inc. brings together conversational AI, business
               application integration, workflow automation, CRM development and
               digital product engineering.
             </p>
@@ -105,7 +105,7 @@ export default function AboutPage() {
         <Container>
           <SectionHeading title="Based in Calgary, Built for Modern Businesses" />
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Manda Vertex Inc. operates from {getLocationLine()} and works with
+            Amanda Vertex Inc. operates from {getLocationLine()} and works with
             organizations seeking practical technology solutions.
           </p>
         </Container>
