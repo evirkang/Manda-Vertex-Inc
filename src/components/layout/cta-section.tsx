@@ -15,7 +15,7 @@ export function CtaSection({
   title,
   description,
   primaryLabel = "Book a Discovery Call",
-  secondaryLabel = "Contact Manda Vertex",
+  secondaryLabel = "Contact Amanda Vertex",
   secondaryHref = "/contact",
 }: CtaSectionProps) {
   return (
