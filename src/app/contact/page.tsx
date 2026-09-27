@@ -8,9 +8,9 @@ import { company, getLocationLine } from "@/data/company";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Contact Manda Vertex Inc. | Calgary",
+  title: "Contact Amanda Vertex Inc. | Calgary",
   description:
-    "Contact Manda Vertex Inc. to discuss AI chatbots, integrations, CRM development and custom applications.",
+    "Contact Amanda Vertex Inc. to discuss AI chatbots, integrations, CRM development and custom applications.",
   path: "/contact",
 });
 
