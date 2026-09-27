@@ -2,8 +2,8 @@ import type { SocialLink } from "@/types";
 
 /** Owner-verified fields — update before publication where noted. */
 export const company = {
-  legalName: "Manda Vertex Inc.",
-  displayName: "Manda Vertex Inc.",
+  legalName: "Amanda Vertex Inc.",
+  displayName: "Amanda Vertex Inc.",
   founderName: "Amandeep Kaur",
   founderTitle: "Founder",
   /** Set true only after verification against incorporation records */
