@@ -11,7 +11,7 @@ import { getServiceBySlug } from "@/data/services";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Business Technology Solutions | Manda Vertex Inc.",
+  title: "Business Technology Solutions | Amanda Vertex Inc.",
   description:
     "Example technology solutions for customer service, booking, sales follow-up, internal knowledge and customer portals.",
   path: "/solutions",
