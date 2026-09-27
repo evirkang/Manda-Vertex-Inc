@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
 export const metadata = createPageMetadata({
-  title: "AI Software Integration & Workflow Automation | Manda Vertex",
+  title: "AI Software Integration & Workflow Automation | Amanda Vertex",
   description:
     "Connect AI with websites, CRMs, internal tools and approved third-party services through planned integrations and automation.",
   path: "/services/ai-integration",
