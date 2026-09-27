@@ -8,7 +8,7 @@ import { getPublishedProjects } from "@/data/projects";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Our Work | Manda Vertex Inc.",
+  title: "Our Work | Amanda Vertex Inc.",
   description:
     "Anonymized Client A and Client B case-study templates awaiting verified facts and client approval.",
   path: "/our-work",
