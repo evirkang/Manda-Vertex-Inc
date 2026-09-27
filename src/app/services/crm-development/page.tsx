@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
 export const metadata = createPageMetadata({
-  title: "Custom CRM Development | Manda Vertex Inc.",
+  title: "Custom CRM Development | Amanda Vertex Inc.",
   description:
     "Custom CRM and workflow tools shaped around your team, pipelines and reporting needs.",
   path: "/services/crm-development",
