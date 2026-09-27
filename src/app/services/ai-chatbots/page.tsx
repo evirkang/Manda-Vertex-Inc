@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
 export const metadata = createPageMetadata({
-  title: "AI Chatbot Development | Manda Vertex Inc.",
+  title: "AI Chatbot Development | Amanda Vertex Inc.",
   description:
     "Design and build AI chatbots with knowledge retrieval, integrations, escalation paths and maintenance suited to your workflows.",
   path: "/services/ai-chatbots",
