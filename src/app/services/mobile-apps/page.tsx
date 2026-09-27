@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
 export const metadata = createPageMetadata({
-  title: "Mobile & Web Application Development | Manda Vertex",
+  title: "Mobile & Web Application Development | Amanda Vertex",
   description:
     "Mobile and web applications planned around users, integrations and deployment constraints.",
   path: "/services/mobile-apps",
