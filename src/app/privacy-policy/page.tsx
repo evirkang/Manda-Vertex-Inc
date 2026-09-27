@@ -4,9 +4,9 @@ import { company, getLocationLine } from "@/data/company";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Privacy Policy | Manda Vertex Inc.",
+  title: "Privacy Policy | Amanda Vertex Inc.",
   description:
-    "Privacy policy draft for Manda Vertex Inc. website—subject to owner and legal review.",
+    "Privacy policy draft for Amanda Vertex Inc. website—subject to owner and legal review.",
   path: "/privacy-policy",
 });
 
@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <PageHero
-        eyebrow="MANDA VERTEX / POLICY"
+        eyebrow="AMANDA VERTEX / POLICY"
         title="Privacy Policy"
         description="This page is a structured draft for owner and legal review. It is not legal advice."
         imageSrc="https://images.pexels.com/photos/4973899/pexels-photo-4973899.jpeg?auto=compress&cs=tinysrgb&w=1600"
