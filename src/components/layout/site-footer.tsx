@@ -27,7 +27,7 @@ export function SiteFooter() {
             href="/contact"
             className="inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold text-foreground transition-colors hover:text-primary sm:self-auto"
           >
-            Contact Manda Vertex
+            Contact Amanda Vertex
             <ArrowUpRight aria-hidden="true" className="size-4" />
           </Link>
         </Container>
@@ -38,10 +38,10 @@ export function SiteFooter() {
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <span className="grid size-10 place-items-center rounded-md border border-primary/30 bg-primary/10 text-sm font-bold text-primary">
-                MV
+                AV
               </span>
               <span className="text-base font-semibold text-foreground">
-                {company.displayName}
+                /* {company.displayName} */ Amanda Vertex Inc
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-6 text-muted-foreground">
@@ -97,7 +97,7 @@ export function SiteFooter() {
               {company.email ? (
                 <li>
                   <a href={`mailto:${company.email}`} className="hover:text-primary">
-                    {company.email}
+                    /* {company.email} */ info@amandavertexinc.com
                   </a>
                 </li>
               ) : null}
@@ -134,7 +134,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col gap-4 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} {company.displayName} · All rights reserved.</p>
+          <p>© {year} Amanda Vertex Inc · All rights reserved.</p>
           <ul className="flex flex-wrap gap-x-5 gap-y-2">
             {footerLegalLinks.map((item) => (
               <li key={item.href}>
