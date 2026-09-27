@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
 export const metadata = createPageMetadata({
-  title: "Technology Optimization & Support | Manda Vertex",
+  title: "Technology Optimization & Support | Amanda Vertex",
   description:
     "Ongoing monitoring, fixes, improvements and feature work under agreed support terms.",
   path: "/services/ongoing-support",
