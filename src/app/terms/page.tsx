@@ -4,9 +4,9 @@ import { company, getLocationLine } from "@/data/company";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Terms | Manda Vertex Inc.",
+  title: "Terms | Amanda Vertex Inc.",
   description:
-    "Website terms draft for Manda Vertex Inc.—subject to owner and legal review.",
+    "Website terms draft for Amanda Vertex Inc.—subject to owner and legal review.",
   path: "/terms",
 });
 
@@ -14,7 +14,7 @@ export default function TermsPage() {
   return (
     <>
       <PageHero
-        eyebrow="MANDA VERTEX / POLICY"
+        eyebrow="AMANDA VERTEX / POLICY"
         title="Terms of Use"
         description="This page is a structured draft for owner and legal review. It is not legal advice."
         imageSrc="https://images.pexels.com/photos/8815849/pexels-photo-8815849.jpeg?auto=compress&cs=tinysrgb&w=1600"
