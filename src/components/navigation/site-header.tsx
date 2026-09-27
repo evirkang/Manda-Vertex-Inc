@@ -54,7 +54,7 @@ export function SiteHeader() {
           href="/"
           className="group inline-flex items-center gap-3 text-sm font-semibold tracking-tight text-foreground sm:text-base"
         >
-          <span className="grid size-9 place-items-center rounded-xl border border-primary/25 bg-primary/[0.08] text-xs font-bold text-primary shadow-[inset_0_1px_rgba(255,255,255,0.08)] transition group-hover:border-primary/50 group-hover:bg-primary/[0.13]">MV</span>
+          <span className="grid size-9 place-items-center rounded-xl border border-primary/25 bg-primary/[0.08] text-xs font-bold text-primary shadow-[inset_0_1px_rgba(255,255,255,0.08)] transition group-hover:border-primary/50 group-hover:bg-primary/[0.13]">AV</span>
           <span>{company.displayName}</span>
         </Link>
 
