@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Our Technology Development Process | Manda Vertex",
+  title: "Our Technology Development Process | Amanda Vertex",
   description:
-    "Discovery, planning, design, development, testing and launch—how Manda Vertex Inc. delivers technology projects.",
+    "Discovery, planning, design, development, testing and launch—how Amanda Vertex Inc. delivers technology projects.",
   path: "/process",
 });
 
